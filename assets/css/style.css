@@ -740,6 +740,10 @@ section {
   color: #fff;
 }
 
+.milestones .plan {
+  padding-bottom: 20px;
+}
+
 .milestones a {
   color: #000000;
   text-decoration: none;
