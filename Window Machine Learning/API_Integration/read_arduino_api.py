@@ -2,7 +2,7 @@
 import requests
 
 base_url = "https://api.thingspeak.com/channels/2316311/feeds.json"
-api_key = ""
+api_key = "UPFQIULFL2PWXLDC"
 params = {
     "api_key": api_key,
     "results": 1
