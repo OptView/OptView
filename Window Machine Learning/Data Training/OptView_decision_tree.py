@@ -4,12 +4,8 @@ from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 import pandas as pd
 
-# Sample data
-data = pd.DataFrame([
-    [20.8, 60.81, 1019.14, 120.95, 5.00, 0.00, 'Open'],
-    [50.0, 70.00, 1019.14, 90.00, 7.00, 0.00, 'Close'],
-    # ... add more data
-], columns=['Temperature', 'Humidity', 'Pressure', 'Gas Resistance', 'UV Light', 'Smoke', 'Window'])
+# Load data from CSV
+data = pd.read_csv('data_samples.csv')
 
 # Separate features and target variable
 X = data.drop(columns=['Window'])
@@ -28,8 +24,15 @@ print(f"Model Accuracy: {accuracy*100:.2f}%")
 
 # Predict whether to open or close the window based on new sensor data
 new_data = pd.DataFrame([
-    [20.80, 60.81, 1019.14, 120.95, 5.00, 0.00]
-], columns=['Temperature', 'Humidity', 'Pressure', 'Gas Resistance', 'UV Light', 'Smoke'])
+    [55.80, 60.81, 50.0]  # Sample new data
+], columns=['Temperature', 'Humidity', 'IAQ Index'])
 
 prediction = clf.predict(new_data)
 print("Action:", prediction[0])
+
+# For the PDLC Glass:
+# pdlc_tint = 1 if uv_light < 90 else 0
+
+# For MQ-7 Fire Sensor:
+# Window = 1 if fire_sensor > 400 else 0
+
