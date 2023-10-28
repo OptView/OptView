@@ -4,7 +4,7 @@ import pandas as pd
 import joblib  # for saving and loading the model
 
 # Load data from CSV
-data = pd.read_csv('data_samples.csv')
+data = pd.read_csv('../Data/data_samples.csv')
 
 # Separate features and target variable
 X = data.drop(columns=['Window'])
