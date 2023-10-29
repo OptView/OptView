@@ -1,8 +1,9 @@
-# Read the Arduino Data API
 import requests
+import os
 
 base_url = "https://api.thingspeak.com/channels/2316311/feeds.json"
-api_key = "UPFQIULFL2PWXLDC"
+api_key = os.getenv('READ_API_KEY')  # Get API key from environment variable
+
 params = {
     "api_key": api_key,
     "results": 1
