@@ -5,11 +5,12 @@ import json
 
 # ThingSpeak API settings for reading
 READ_API_BASE_URL = "https://api.thingspeak.com/channels/2316311/feeds.json"
-READ_API_KEY = ""
+READ_API_KEY = os.getenv('READ_API_KEY')  # Get API key from environment variable
+
 
 # ThingSpeak API settings for writing
 WRITE_API_BASE_URL = "https://api.thingspeak.com/update"
-WRITE_API_KEY = ""
+WRITE_API_KEY = os.getenv('WRITE_API_KEY')  # Get API key from environment variable
 
 # Testing threshold for turning On/Off
 TEMPERATURE_THRESHOLD = 20  # Example threshold
