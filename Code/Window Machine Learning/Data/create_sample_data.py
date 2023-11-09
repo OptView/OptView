@@ -67,7 +67,7 @@ print("Finished Creating Cold Day Data")
 
 print()
 
-# Write the generated samples to CSV
+# Write the generated samples to a new CSV
 with open("data_samples.csv", "w", newline="") as csvfile:
     csvwriter = csv.writer(csvfile)
     # Writing the header
