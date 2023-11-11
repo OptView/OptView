@@ -1,17 +1,21 @@
 import pandas as pd
 import joblib
+import os
 
 def load_model(model_path):
     """Load the trained model from a file."""
+    print("load_model called")
+
     clf = joblib.load(model_path)
     return clf
 
-def make_prediction(clf, data):
+def make_prediction(data):
     """Predict the action based on sensor data."""
+    print("make_prediction called")
     sample_data = pd.DataFrame([data], columns=['Temperature', 'Humidity', 'IAQ Index'])
+    clf = load_model('../../models/trained_decision_tree_model.pkl')
     prediction = clf.predict(sample_data)
     return prediction[0]
-
 
 
 # For the PDLC Glass:
