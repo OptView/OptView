@@ -6,7 +6,7 @@ clf = joblib.load('trained_decision_tree_model.pkl')
 
 # Predict whether to open or close the window based on new sensor data
 new_data = pd.DataFrame([
-    [25.80, 60.81, 50.0]  # Sample new data
+    [25.80, 50.81, 50.0]  # Sample new data
 ], columns=['Temperature', 'Humidity', 'IAQ Index'])
 
 prediction = clf.predict(new_data)
