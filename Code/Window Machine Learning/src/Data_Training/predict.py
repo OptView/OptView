@@ -1,16 +1,18 @@
 import pandas as pd
-import joblib  # for loading the trained model
+import joblib
 
-# Load the saved model
-clf = joblib.load('trained_decision_tree_model.pkl')
+def load_model(model_path):
+    """Load the trained model from a file."""
+    clf = joblib.load(model_path)
+    return clf
 
-# Predict whether to open or close the window based on new sensor data
-new_data = pd.DataFrame([
-    [25.80, 50.81, 50.0]  # Sample new data
-], columns=['Temperature', 'Humidity', 'IAQ Index'])
+def make_prediction(clf, data):
+    """Predict the action based on sensor data."""
+    sample_data = pd.DataFrame([data], columns=['Temperature', 'Humidity', 'IAQ Index'])
+    prediction = clf.predict(sample_data)
+    return prediction[0]
 
-prediction = clf.predict(new_data)
-print("Action:", prediction[0])
+
 
 # For the PDLC Glass:
 # pdlc_tint = 1 if uv_light < 90 else 0
