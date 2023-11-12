@@ -1,1 +1,1 @@
-from .predict import *
+from .model_prediction import make_prediction
