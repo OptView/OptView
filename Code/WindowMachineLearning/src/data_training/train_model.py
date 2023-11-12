@@ -20,7 +20,7 @@ clf = DecisionTreeClassifier(random_state=42)
 clf.fit(X_train, y_train)
 
 # Save the trained model
-joblib.dump(clf, 'trained_decision_tree_model.pkl')
+joblib.dump(clf, '../../models/trained_decision_tree_model.pkl')
 
 # Predict on test set
 y_pred = clf.predict(X_test)
