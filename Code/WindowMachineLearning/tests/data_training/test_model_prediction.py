@@ -6,6 +6,8 @@ from src.data_training.model_prediction import make_prediction, load_model
 
 
 class TestComfortableDayPrediction(unittest.TestCase):
+
+    # this method is only run once for the entire class
     @classmethod
     def setUpClass(cls):
         # Define the model path and load the model once for all tests
@@ -28,6 +30,7 @@ class TestComfortableDayPrediction(unittest.TestCase):
         self.assertEqual(action, expected_output)
 
     def test_max_normal(self):
+        """Test Failed"""
         data = [29.90, 60.00, 95.0]  # Temperature, Humidity, IAQ Index
         action = make_prediction(data, self.clf)
         expected_output = 1
