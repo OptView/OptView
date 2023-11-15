@@ -6,8 +6,10 @@ from src.data_training.model_prediction import make_prediction, load_model
 
 
 class TestComfortableDayPrediction(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        # Define the model path and load the model once for all tests
 
-    def test_normal_temp(self):
         # For testing directory
         # model_path = '../models/trained_decision_tree_model.pkl'
 
@@ -15,18 +17,27 @@ class TestComfortableDayPrediction(unittest.TestCase):
         # model_path = '../../models/trained_decision_tree_model.pkl'
 
         # For Coverage testing report using terminal
-        model_path = 'models/trained_decision_tree_model.pkl'
+        cls.model_path = 'models/trained_decision_tree_model.pkl'
 
-        clf = load_model(model_path)
+        cls.clf = load_model(cls.model_path)
 
-        data = [25.80, 50.81, 50.0]  # Temperature, Humidity, IAQ Index
-
-        action = make_prediction(data, clf)
+    def test_normal(self):
+        data = [20.00, 35.81, 50.0]  # Temperature, Humidity, IAQ Index
+        action = make_prediction(data, self.clf)
         expected_output = 1
-
-        # Check if action is as expected
         self.assertEqual(action, expected_output)
 
+    def test_max_normal(self):
+        data = [29.90, 60.00, 95.0]  # Temperature, Humidity, IAQ Index
+        action = make_prediction(data, self.clf)
+        expected_output = 1
+        self.assertEqual(action, expected_output)
+
+    def test_min_normal(self):
+        data = [11.00, 10.00, 15.0]  # Temperature, Humidity, IAQ Index
+        action = make_prediction(data, self.clf)
+        expected_output = 1
+        self.assertEqual(action, expected_output)
 
 # if __name__ == '__main__':
 #     unittest.main()
