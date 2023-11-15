@@ -5,9 +5,9 @@ import os
 from src.data_training.model_prediction import make_prediction, load_model
 
 
-class TestModelPrediction(unittest.TestCase):
+class TestComfortableDayPrediction(unittest.TestCase):
 
-    def test_make_prediction(self):
+    def test_normal_temp(self):
         # For testing directory
         # model_path = '../models/trained_decision_tree_model.pkl'
 

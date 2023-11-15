@@ -1,7 +1,10 @@
 import requests
+from dotenv import load_dotenv
+
 
 def check_weather_conditions(city, api_key):
     # Construct the URL
+
     base_url = "http://api.openweathermap.org/data/2.5/weather?"
     final_url = base_url + "appid=" + api_key + "&q=" + city
 

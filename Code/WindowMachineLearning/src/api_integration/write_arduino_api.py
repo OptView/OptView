@@ -1,7 +1,12 @@
 # Write on API based on the reading of the Arduino Data API
-
+import time
 import requests
 import json
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
 
 # ThingSpeak API settings for reading
 READ_API_BASE_URL = "https://api.thingspeak.com/channels/2316311/feeds.json"
@@ -13,7 +18,7 @@ WRITE_API_BASE_URL = "https://api.thingspeak.com/update"
 WRITE_API_KEY = os.getenv('WRITE_API_KEY')  # Get API key from environment variable
 
 # Testing threshold for turning On/Off
-TEMPERATURE_THRESHOLD = 20  # Example threshold
+TEMPERATURE_THRESHOLD = 25  # Example threshold
 
 def get_last_temperature():
     params = {
@@ -45,22 +50,21 @@ def set_state(on):
     else:
         print(f"Failed to set state. Status code: {response.status_code}")
 
+while True:
+    # Get the last temperature reading
+    temperature = get_last_temperature()
 
-# Get the last temperature reading
-temperature = get_last_temperature()
+    if temperature is not None:
+        print(f"Last temperature reading: {temperature}°C")
 
-if temperature is not None:
-    print(f"Last temperature reading: {temperature}°C")
-
-    # Analyze the temperature and set the state
-    if temperature > TEMPERATURE_THRESHOLD:
-        print("Temperature exceeds threshold. Turning On.")
-        set_state(True)
+        # Analyze the temperature and set the state
+        if temperature > TEMPERATURE_THRESHOLD:
+            print("Temperature exceeds threshold. Turning On.")
+            set_state(True)
+        else:
+            print("Temperature is below threshold. Turning Off.")
+            set_state(False)
     else:
-        print("Temperature is below threshold. Turning Off.")
-        set_state(False)
-else:
-    print("Failed to retrieve temperature data.")
-
-# For the PDLC Glass:
-# pdlc_tint = 1 if uv_light < 90 else 0            # PDLC Glass Tinting
+        print("Failed to retrieve temperature data.")
+    print("Sleeping...")
+    time.sleep(15)

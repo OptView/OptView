@@ -28,6 +28,10 @@ cd path/to/WindowMachineLearning
 Execute the following command to start the coverage measurement:
 ```shell
 coverage run -m unittest discover -s tests
+
+# coverage run -m unittest tests.data_training.test_model_prediction
+
+# python -m unittest tests.data_training.test_model_prediction
 ```
 
 
