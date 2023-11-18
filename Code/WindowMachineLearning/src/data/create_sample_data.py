@@ -24,7 +24,7 @@ print("Creating Hot Day Data in Process...")
 # Reduced upper temperature limit to reflect more common high temperatures.
 for _ in range(data_count):
     data_samples.append([round(random.uniform(32.0, 55.0), 2),  # Temperature
-                         round(random.uniform(40.0, 60.0), 2),  # Humidity
+                         round(random.uniform(00.0, 80.0), 2),  # Humidity
                          random.randint(0, 100),                # IAQ Index
                          0])                                    # Window Closed
 print("Finished Creating Hot Day Data")
@@ -60,7 +60,7 @@ print("Creating Cold Day Data in Process...")
 # The lower limit for temperature is adjusted to a more common cold temperature.
 for _ in range(data_count):
     data_samples.append([round(random.uniform(-20.0, 5.0), 2),  # Temperature
-                         round(random.uniform(30.0, 60.0), 2),   # Humidity
+                         round(random.uniform(00.0, 80.0), 2),   # Humidity
                          random.randint(0, 100),                  # IAQ Index (good to moderate air quality)
                          0])                                     # Window Closed
 print("Finished Creating Cold Day Data")

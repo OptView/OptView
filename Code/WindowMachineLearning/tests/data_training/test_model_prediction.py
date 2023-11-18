@@ -31,13 +31,14 @@ class TestComfortableDayPrediction(unittest.TestCase):
 
     def test_max_normal(self):
         """Test Failed"""
-        data = [29.90, 60.00, 95.0]  # Temperature, Humidity, IAQ Index
+        data = [30.00, 60.00, 100.0]  # Temperature, Humidity, IAQ Index
         action = make_prediction(data, self.clf)
         expected_output = 1
         self.assertEqual(action, expected_output)
 
     def test_min_normal(self):
-        data = [11.00, 10.00, 15.0]  # Temperature, Humidity, IAQ Index
+        """Test Failed"""
+        data = [10.00, 00.00, 00.0]  # Temperature, Humidity, IAQ Index
         action = make_prediction(data, self.clf)
         expected_output = 1
         self.assertEqual(action, expected_output)
