@@ -2,7 +2,7 @@ import unittest
 import joblib
 import os
 
-from src.data_training.model_prediction import make_prediction, load_model
+from src.data_training.window_controller import make_prediction, load_model
 
 
 class TestComfortableDayPrediction(unittest.TestCase):
