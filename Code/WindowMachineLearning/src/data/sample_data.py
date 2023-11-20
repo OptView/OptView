@@ -2,19 +2,16 @@ import random
 import csv
 
 def create_sample_data(data_count):
-    """""
-    Creates sample data for the model to train on.
-    :param data_count: The number of data samples to generate for each category.
-    :return: A list of data samples, each containing a temperature, humidity, IAQ Index, and window state.
-    """""
+    """Creates sample data for the model to train on.
+
+    Args:
+        data_count (int): The number of data samples to generate for each category.
+
+    Returns:
+        list: A list of data samples, each containing a temperature, humidity, IAQ Index, and window state.
+    """
 
     data_samples = []
-
-    # Adjusted sample boundaries for smart window model
-    # Temperature: -20.0°C to 55.0°C
-    # Humidity: 00.0% to 100.0%
-    # IAQ Index: 0 to 350
-    # Window: 0 for closed, 1 for open
 
     print("Creating Comfortable Day Data in Process...")
     # Comfortable Day
@@ -22,7 +19,7 @@ def create_sample_data(data_count):
     for _ in range(data_count):
         data_samples.append([round(random.uniform(10.0, 30.0), 2),  # Temperature
                              round(random.uniform(00.0, 70.0), 2),  # Humidity
-                             random.randint(0, 100),                 # IAQ Index (good to moderate air quality)
+                             random.randint(0, 100),                 # IAQ Index
                              1])                                    # Window Open
     print("Finished Creating Comfortable Day Data")
 
@@ -77,8 +74,13 @@ def create_sample_data(data_count):
     print()
     return data_samples
 
-# Save the data samples to a CSV file
 def save_data(data_samples):
+    """Saves the generated data samples to a CSV file.
+
+    Args:
+        data_samples (list): A list of data samples, each containing a temperature, humidity, IAQ Index, and window state.
+    """
+
     # Write the generated samples to a new CSV
     with open("data_samples.csv", "w", newline="") as csvfile:
         csvwriter = csv.writer(csvfile)
