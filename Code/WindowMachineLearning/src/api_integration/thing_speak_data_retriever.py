@@ -7,10 +7,11 @@ class ThingSpeakDataRetriever:
     def __init__(self, channel_id):
         """Initialize the ThingSpeakDataRetriever with the channel ID.
 
-        Args:
-            channel_id (str): The ID of the ThingSpeak channel to retrieve data from.
+        Args: channel_id (str): The ID of the ThingSpeak channel to retrieve data
+        from.
         """
-        self.base_url = f"https://api.thingspeak.com/channels/{channel_id}/feeds.json"
+        self.base_url =\
+            f"https://api.thingspeak.com/channels/{channel_id}/feeds.json"
         self.api_key = os.getenv(
             'READ_API_KEY')  # Assumes the .env file has the 'READ_API_KEY'
 
@@ -20,8 +21,8 @@ class ThingSpeakDataRetriever:
         Args:
             results (int): The number of results to retrieve.
 
-        Returns:
-            tuple: A tuple containing field names, field values of the last entry, and the entry ID.
+        Returns: tuple: A tuple containing field names, field values of the last
+        entry, and the entry ID.
         """
         params = {
             "api_key": self.api_key,
