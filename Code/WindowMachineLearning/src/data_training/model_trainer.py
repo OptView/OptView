@@ -63,11 +63,16 @@ class ModelTrainer:
 
 
 # Example usage:
-trainer = ModelTrainer('../data/data_samples.csv',
-                       '../../models/trained_decision_tree_model.pkl')
+data_path = '../data/data_samples.csv'
+model_path = '../../models/trained_decision_tree_model.pkl'
+
+trainer = ModelTrainer(data_path, model_path)
+
 X, y = trainer.load_data()
 X_train, X_val, X_test, y_train, y_val, y_test = trainer.split_data(X, y)
 trainer.train_model(X_train, y_train)
+
 trainer.save_model()
+
 metrics = trainer.evaluate_model(X_test, y_test)
 trainer.print_evaluation(metrics)
