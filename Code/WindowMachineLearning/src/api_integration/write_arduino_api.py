@@ -1,3 +1,8 @@
+# TODO:
+#  1. Integrate the machine learning model into the code
+#  2. Finish the code to write on the API based on the reading of the Arduino Data API
+#  3. Test the code
+
 # Write on API based on the reading of the Arduino Data API
 import time
 import requests
