@@ -6,6 +6,8 @@ import joblib
 
 
 class ModelTrainer:
+    print("ModelTrainer Called")
+
     def __init__(self, data_path, model_path):
         """
         Initialize the ModelTrainer with the path to the data and the path to save the model.

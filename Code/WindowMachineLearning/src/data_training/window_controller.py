@@ -1,7 +1,10 @@
 import pandas as pd
 import joblib
 
+
 class WindowController:
+    print("WindowController Called")
+
     def __init__(self, model_path):
         """
         Initialize the WindowController with a trained model.
@@ -33,6 +36,7 @@ class WindowController:
         Returns:
             int: The predicted action, where 0 means 'close the window' and 1 means 'open the window'.
         """
-        sample_data = pd.DataFrame([data], columns=['Temperature', 'Humidity', 'IAQ Index'])
+        sample_data = pd.DataFrame([data],
+                                   columns=['Temperature', 'Humidity', 'IAQ Index'])
         prediction = self.clf.predict(sample_data)
         return prediction[0]

@@ -3,6 +3,8 @@ import csv
 
 
 class DataGenerator:
+    print("DataGenerator Called")
+
     def __init__(self):
         """Initializes the DataGenerator with an empty list for data samples."""
         self.data_samples = []

@@ -4,6 +4,7 @@ import os
 
 
 class WeatherChecker:
+    print("WeatherChecker Called")
     def __init__(self, api_key):
         """Initialize the WeatherChecker with the API key.
 
