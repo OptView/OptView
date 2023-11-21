@@ -45,7 +45,7 @@ class ThingSpeakDataRetriever:
 
 # Example usage:
 load_dotenv()  # Load the environment variables
-channel_id = "2316311"  # hannel ID
+channel_id = "2316311"  # Channel ID
 data_retriever = ThingSpeakDataRetriever(channel_id)
 field_names, field_values, entry_id = data_retriever.get_data()
 

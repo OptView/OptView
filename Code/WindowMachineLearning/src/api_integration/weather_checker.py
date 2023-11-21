@@ -2,6 +2,7 @@ import requests
 from dotenv import load_dotenv
 import os
 
+
 class WeatherChecker:
     def __init__(self, api_key):
         """Initialize the WeatherChecker with the API key.
@@ -66,6 +67,7 @@ class WeatherChecker:
         else:
             print(f"The weather in {city} is currently {weather_condition}.")
             return 1
+
 
 # Example usage:
 load_dotenv()
