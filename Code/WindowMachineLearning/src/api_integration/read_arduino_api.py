@@ -3,36 +3,56 @@ import os
 from dotenv import load_dotenv
 
 
-load_dotenv()
+class ThingSpeakDataRetriever:
+    def __init__(self, channel_id):
+        """Initialize the ThingSpeakDataRetriever with the channel ID.
 
-base_url = "https://api.thingspeak.com/channels/2316311/feeds.json"
-api_key = os.getenv('READ_API_KEY')  # Get API key from environment variable
+        Args:
+            channel_id (str): The ID of the ThingSpeak channel to retrieve data from.
+        """
+        self.base_url = f"https://api.thingspeak.com/channels/{channel_id}/feeds.json"
+        self.api_key = os.getenv(
+            'READ_API_KEY')  # Assumes the .env file has the 'READ_API_KEY'
 
-params = {
-    "api_key": api_key,
-    "results": 2
-}
+    def get_data(self, results=2):
+        """Retrieve data from the ThingSpeak channel.
 
-response = requests.get(base_url, params=params)
+        Args:
+            results (int): The number of results to retrieve.
 
-if response.status_code == 200:
-    data = response.json()
+        Returns:
+            tuple: A tuple containing field names, field values of the last entry, and the entry ID.
+        """
+        params = {
+            "api_key": self.api_key,
+            "results": results
+        }
+        response = requests.get(self.base_url, params=params)
 
-    # Getting the last entry if the "results" is more than 1
-    last_entry = data['feeds'][-1]
+        if response.status_code == 200:
+            data = response.json()
+            last_entry = data['feeds'][-1]
+            field_names = {f"field{i}": data['channel'][f'field{i}'] for i in
+                           range(1, 7)}
+            field_values = {f"field{i}": last_entry[f'field{i}'] for i in
+                            range(1, 7)}
+            entry_id = last_entry['entry_id']
+            return field_names, field_values, entry_id
+        else:
+            print(f"Failed to retrieve data: {response.status_code}")
+            return None, None, None
 
-    # Extracting field names
-    field_names = {f"field{i}": data['channel'][f'field{i}'] for i in range(1, 7)}
+
+# Example usage:
+load_dotenv()  # Load the environment variables
+channel_id = "2316311"  # hannel ID
+data_retriever = ThingSpeakDataRetriever(channel_id)
+field_names, field_values, entry_id = data_retriever.get_data()
+
+if field_names and field_values:
     print("Field Names:")
     print(field_names)
-
-    # Extracting field values of the last entry
     print("\nField Values for the last entry:")
-    field_values = {f"field{i}": last_entry[f'field{i}'] for i in range(1, 7)}
     print(field_values)
-
-    # Printing the entry_id of the last entry
     print("\nEntry ID of the last entry:")
-    print(last_entry['entry_id'])
-else:
-    print(f"Failed to retrieve data: {response.status_code}")
+    print(entry_id)
