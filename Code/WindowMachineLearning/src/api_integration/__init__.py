@@ -1,2 +1,2 @@
-from .window_controller import WindowController
 from .thing_speak_data_retriever import ThingSpeakDataRetriever
+from .weather_checker import WeatherChecker
