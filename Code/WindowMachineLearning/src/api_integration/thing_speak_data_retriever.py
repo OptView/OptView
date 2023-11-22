@@ -46,16 +46,16 @@ class ThingSpeakDataRetriever:
             return None, None, None
 
 
-# Example usage:
-load_dotenv()  # Load the environment variables
-channel_id = "2316311"  # Channel ID
-data_retriever = ThingSpeakDataRetriever(channel_id)
-field_names, field_values, entry_id = data_retriever.get_data()
-
-if field_names and field_values:
-    print("Field Names:")
-    print(field_names)
-    print("\nField Values for the last entry:")
-    print(field_values)
-    print("\nEntry ID of the last entry:")
-    print(entry_id)
+# # Example usage:
+# load_dotenv()  # Load the environment variables
+# channel_id = "2316311"  # Channel ID
+# data_retriever = ThingSpeakDataRetriever(channel_id)
+# field_names, field_values, entry_id = data_retriever.get_data()
+#
+# if field_names and field_values:
+#     print("Field Names:")
+#     print(field_names)
+#     print("\nField Values for the last entry:")
+#     print(field_values)
+#     print("\nEntry ID of the last entry:")
+#     print(entry_id)

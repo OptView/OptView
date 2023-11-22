@@ -1,3 +1,6 @@
+# TODO = This file is not used in the project. It should be integrated with the
+#  rest of the project.
+
 import requests
 from dotenv import load_dotenv
 import os
