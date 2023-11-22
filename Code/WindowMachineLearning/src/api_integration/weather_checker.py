@@ -5,6 +5,7 @@ import os
 
 class WeatherChecker:
     print("WeatherChecker Called")
+
     def __init__(self, api_key):
         """Initialize the WeatherChecker with the API key.
 
@@ -70,9 +71,9 @@ class WeatherChecker:
             return 1
 
 
-# Example usage:
-load_dotenv()
-api_key = os.getenv('WEATHER_API_KEY')  # Get API key from environment variable
-weather_checker = WeatherChecker(api_key)
-city = "Edinburgh"
-weather_checker.check_weather_conditions(city)
+# # Example usage:
+# load_dotenv()
+# api_key = os.getenv('WEATHER_API_KEY')  # Get API key from environment variable
+# weather_checker = WeatherChecker(api_key)
+# city = "Edinburgh"
+# weather_checker.check_weather_conditions(city)
