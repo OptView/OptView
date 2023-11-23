@@ -3,6 +3,7 @@ from src.data.data_generator import DataGenerator
 
 
 class TestDataGenerator(unittest.TestCase):
+    """Test the DataGenerator class."""
 
     @classmethod
     def setUpClass(cls):

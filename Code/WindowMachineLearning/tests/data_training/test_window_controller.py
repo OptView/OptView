@@ -2,6 +2,7 @@ import unittest
 from src.data_training.window_controller import WindowController
 
 class TestWindowController(unittest.TestCase):
+    """Test the WindowController class."""
 
     @classmethod
     def setUpClass(cls):
