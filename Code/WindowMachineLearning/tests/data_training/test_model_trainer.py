@@ -92,7 +92,3 @@ class TestModelTrainer(unittest.TestCase):
         self.assertEqual(metrics['precision'], 1.0)
         self.assertEqual(metrics['recall'], 1.0)
         self.assertEqual(metrics['f1_score'], 1.0)
-
-# The following line would run the tests if uncommented and this file is executed
-# if __name__ == '__main__':
-#     unittest.main()

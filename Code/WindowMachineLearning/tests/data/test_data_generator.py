@@ -111,8 +111,3 @@ class TestDataGenerator(unittest.TestCase):
         self.assertTrue(0.0 <= sample[1] <= 80.0)   # Humidity
         self.assertTrue(0 <= sample[2] <= 100)      # IAQ Index
         self.assertEqual(sample[3], 0)              # Window State (0 for closed)
-
-
-# The following line would run the tests if uncommented and this file is executed
-# if __name__ == '__main__':
-#     unittest.main()

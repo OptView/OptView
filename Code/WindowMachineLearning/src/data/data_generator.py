@@ -38,13 +38,13 @@ class DataGenerator:
              each containing a temperature, humidity,
              IAQ Index, and window state.
         """
-        print("\nCreating sample data in process...")
+        # print("\nCreating sample data in process...")
         self._create_comfortable_day_data(data_count)
         self._create_hot_day_data(data_count)
         self._create_polluted_day_data(data_count)
         self._create_high_humidity_day_data(data_count)
         self._create_cold_day_data(data_count)
-        print("Finished creating sample data", end="\n\n")
+        # print("Finished creating sample data", end="\n\n")
         return self.data_samples
 
     def save_data(self, filename="data_samples.csv"):

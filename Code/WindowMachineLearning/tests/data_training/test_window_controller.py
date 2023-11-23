@@ -74,8 +74,3 @@ class TestWindowController(unittest.TestCase):
         action = self.window_controller.make_prediction(data)
         expected_output = 0  # 0 indicates close the window
         self.assertEqual(action, expected_output)
-
-
-# The following line would run the tests if uncommented and this file is executed
-# if __name__ == '__main__':
-#     unittest.main()
