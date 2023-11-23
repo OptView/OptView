@@ -1,3 +1,24 @@
+"""This module retrieves data from the ThingSpeak channel.
+
+The module contains a ThingSpeakDataRetriever class
+ which can be used to retrieve data from the ThingSpeak channel.
+
+Example usage:
+    load_dotenv()
+    channel_id = "2316311"  # Channel ID
+    data_retriever = ThingSpeakDataRetriever(channel_id)
+
+    field_names, field_values, entry_id = data_retriever.get_data()
+
+    if field_names and field_values:
+        print("Field Names:")
+        print(field_names)
+        print("\nField Values for the last entry:")
+        print(field_values)
+        print("\nEntry ID of the last entry:")
+        print(entry_id)
+"""
+
 import requests
 import os
 from dotenv import load_dotenv
@@ -44,18 +65,3 @@ class ThingSpeakDataRetriever:
         else:
             print(f"Failed to retrieve data: {response.status_code}")
             return None, None, None
-
-
-# # Example usage:
-# load_dotenv()  # Load the environment variables
-# channel_id = "2316311"  # Channel ID
-# data_retriever = ThingSpeakDataRetriever(channel_id)
-# field_names, field_values, entry_id = data_retriever.get_data()
-#
-# if field_names and field_values:
-#     print("Field Names:")
-#     print(field_names)
-#     print("\nField Values for the last entry:")
-#     print(field_values)
-#     print("\nEntry ID of the last entry:")
-#     print(entry_id)

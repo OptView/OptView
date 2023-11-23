@@ -1,3 +1,11 @@
+"""This module is the main entry point for the automated control system.
+
+The module contains a main function which is the main entry point for the automated control system.
+
+Example usage:
+    python main.py
+"""
+
 from dotenv import load_dotenv
 import os
 from api_integration.thing_speak_state_sender import ThingSpeakStateSender
@@ -8,8 +16,8 @@ load_dotenv()
 
 # Set up the controller with the appropriate keys and model path
 read_channel_id = "2316311"
-write_api_key = os.getenv('WRITE_API_KEY')  # Replace with your Write API Key
-model_path = "../models/trained_decision_tree_model.pkl"  # Replace with the path to your trained model
+write_api_key = os.getenv('WRITE_API_KEY')
+model_path = "../models/trained_decision_tree_model.pkl"
 
 # Initialize the ThingSpeakStateSender
 window_controller = ThingSpeakStateSender(read_channel_id, write_api_key,

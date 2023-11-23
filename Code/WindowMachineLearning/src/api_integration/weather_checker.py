@@ -1,6 +1,19 @@
 # TODO = This file is not used in the project. It should be integrated with the
 #  rest of the project.
 
+"""This module checks the current weather conditions for a city.
+
+The module contains a WeatherChecker class
+ which can be used to check the current weather conditions for a city.
+
+Example usage:
+    load_dotenv()
+    api_key = os.getenv('WEATHER_API_KEY')  # Get API key from environment variable
+    weather_checker = WeatherChecker(api_key)
+    city = "Edinburgh"
+    weather_checker.check_weather_conditions(city)
+"""
+
 import requests
 from dotenv import load_dotenv
 import os
@@ -72,11 +85,3 @@ class WeatherChecker:
         else:
             print(f"The weather in {city} is currently {weather_condition}.")
             return 1
-
-
-# # Example usage:
-# load_dotenv()
-# api_key = os.getenv('WEATHER_API_KEY')  # Get API key from environment variable
-# weather_checker = WeatherChecker(api_key)
-# city = "Edinburgh"
-# weather_checker.check_weather_conditions(city)

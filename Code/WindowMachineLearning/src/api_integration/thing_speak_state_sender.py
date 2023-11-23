@@ -1,3 +1,20 @@
+"""This module sends commands to ThingSpeak to set the state of the window.
+
+The module contains a ThingSpeakStateSender class
+ which can be used to send commands to ThingSpeak to set the state of the window.
+
+Example usage:
+    load_dotenv()
+    read_channel_id = "2316311"  # ThingSpeak channel ID for reading data
+    write_api_key = os.getenv('WRITE_API_KEY')  # ThingSpeak API key for writing data
+    model_path = '../../models/trained_decision_tree_model.pkl'  # Path to the trained model
+
+    controller = ThingSpeakStateSender(read_channel_id, write_api_key, model_path)
+    action = controller.get_action()
+    if action is not None:
+        controller.set_state(action)
+"""
+
 import requests
 from dotenv import load_dotenv
 import os
@@ -54,14 +71,3 @@ class ThingSpeakStateSender:
             print(f"Successfully set state to {'On' if state else 'Off'}.")
         else:
             print(f"Failed to set state. Status code: {response.status_code}")
-
-# # Example usage:
-# load_dotenv()
-# read_channel_id = "2316311"  # ThingSpeak channel ID for reading data
-# write_api_key = os.getenv('WRITE_API_KEY')  # ThingSpeak API key for writing data
-# model_path = '../../models/trained_decision_tree_model.pkl'  # Path to the trained model
-#
-# controller = ThingSpeakStateSender(read_channel_id, write_api_key, model_path)
-# action = controller.get_action()
-# if action is not None:
-#     controller.set_state(action)

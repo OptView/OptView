@@ -1,3 +1,21 @@
+"""This module controls the window based on sensor data.
+
+The module contains a WindowController class
+ which can be used to control the window based on sensor data.
+
+Example usage:
+    model_path = '../../models/trained_decision_tree_model.pkl'
+
+    controller = WindowController(model_path)
+
+    data = [23.0, 55.0, 100.0]
+    action = controller.make_prediction(data)
+    if action == 0:
+        print("Close the window!")
+    else:
+        print("Open the window!")
+"""
+
 import pandas as pd
 import joblib
 

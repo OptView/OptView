@@ -1,3 +1,25 @@
+"""This module trains a decision tree classifier on the generated data.
+
+The module contains a ModelTrainer class
+ which can be used to train a decision tree classifier on the generated data.
+ The trained model is saved for later use.
+
+Example usage:
+    data_path = '../data/data_samples.csv'
+    model_path = '../../models/trained_decision_tree_model.pkl'
+
+    trainer = ModelTrainer(data_path, model_path)
+
+    X, y = trainer.load_data()
+    X_train, X_val, X_test, y_train, y_val, y_test = trainer.split_data(X, y)
+    trainer.train_model(X_train, y_train)
+
+    trainer.save_model()
+
+    metrics = trainer.evaluate_model(X_test, y_test)
+    trainer.print_evaluation(metrics)
+"""
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
@@ -62,19 +84,3 @@ class ModelTrainer:
         print(f"Precision: {metrics['precision'] * 100:.2f}%")
         print(f"Recall: {metrics['recall'] * 100:.2f}%")
         print(f"F1-Score: {metrics['f1_score'] * 100:.2f}%")
-
-
-# Example usage:
-data_path = '../data/data_samples.csv'
-model_path = '../../models/trained_decision_tree_model.pkl'
-
-trainer = ModelTrainer(data_path, model_path)
-
-X, y = trainer.load_data()
-X_train, X_val, X_test, y_train, y_val, y_test = trainer.split_data(X, y)
-trainer.train_model(X_train, y_train)
-
-trainer.save_model()
-
-metrics = trainer.evaluate_model(X_test, y_test)
-trainer.print_evaluation(metrics)
