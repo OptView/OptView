@@ -9,7 +9,14 @@ import time
 
 
 class AutomatedSystemRunner:
+    """A class used to run the window automation system."""
+
     def __init__(self, controller):
+        """Initialize the AutomatedSystemRunner with a controller.
+
+        Args:
+            controller (ThingSpeakStateSender): The controller to use to control the window state.
+        """
         self.controller = controller
         self.running = threading.Event()
         self.running.set()  # Start with the event set to True

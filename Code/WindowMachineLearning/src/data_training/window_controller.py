@@ -21,6 +21,8 @@ import joblib
 
 
 class WindowController:
+    """A class used to control the window based on sensor data."""
+
     print("WindowController Called")
 
     def __init__(self, model_path):

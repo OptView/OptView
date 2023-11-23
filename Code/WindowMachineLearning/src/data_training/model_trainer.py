@@ -28,6 +28,8 @@ import joblib
 
 
 class ModelTrainer:
+    """A class used to train a decision tree classifier on the generated data."""
+
     print("ModelTrainer Called")
 
     def __init__(self, data_path, model_path):

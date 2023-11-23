@@ -25,6 +25,8 @@ from dotenv import load_dotenv
 
 
 class ThingSpeakDataRetriever:
+    """A class used to retrieve data from the ThingSpeak channel."""
+
     print("ThingSpeakDataRetriever Called")
 
     def __init__(self, channel_id):

@@ -20,6 +20,8 @@ import os
 
 
 class WeatherChecker:
+    """A class used to check the current weather conditions for a city."""
+
     print("WeatherChecker Called")
 
     def __init__(self, api_key):

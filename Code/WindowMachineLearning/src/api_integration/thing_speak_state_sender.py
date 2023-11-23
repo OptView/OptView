@@ -22,6 +22,8 @@ from .thing_speak_data_retriever import ThingSpeakDataRetriever
 from src.data_training.window_controller import WindowController
 
 class ThingSpeakStateSender:
+    """A class used to send commands to ThingSpeak to set the state of the window."""
+
     print("ThingSpeakStateSender Called")
 
     def __init__(self, read_channel_id, write_api_key, model_path):
