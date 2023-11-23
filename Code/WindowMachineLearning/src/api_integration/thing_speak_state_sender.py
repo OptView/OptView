@@ -19,6 +19,7 @@ import requests
 from dotenv import load_dotenv
 import os
 from .thing_speak_data_retriever import ThingSpeakDataRetriever
+from .weather_checker import WeatherChecker
 from src.data_training.window_controller import WindowController
 
 class ThingSpeakStateSender:
@@ -41,24 +42,34 @@ class ThingSpeakStateSender:
         self.write_api_base_url = "https://api.thingspeak.com/update"
 
     def get_action(self):
-        """Retrieve the latest data from ThingSpeak and predict the action."""
-        _, field_values, _ = self.data_retriever.get_data()
+        # Check the weather conditions
+        weather_checker = WeatherChecker(os.getenv("WEATHER_API_KEY"))
+        city = "Edinburgh"
+        weather_conditions = weather_checker.check_weather_conditions(city)
 
-        if field_values:
-            # Extract the values needed for the WindowController
-            temperature = field_values.get('field1')  # Assuming field1 is the temperature
-            humidity = field_values.get('field2')  # Assuming field2 is the humidity
-            air_quality = field_values.get('field4')  # Assuming field4 is the IAQ Index
-
-            # Format the data as expected by the WindowController
-            sensor_data = [float(temperature), float(humidity), float(air_quality)]
-
-            # Make a prediction with the WindowController
-            action = self.window_controller.make_prediction(sensor_data)
-            return action
+        if weather_conditions:
+            print("Close")
+            action = 0
         else:
-            print("Failed to retrieve data")
-            return None
+            print("Open")
+
+            _, field_values, _ = self.data_retriever.get_data()
+
+            if field_values:
+                # Extract the values needed for the WindowController
+                temperature = field_values.get('field1')  # Assuming field1 is the temperature
+                humidity = field_values.get('field2')  # Assuming field2 is the humidity
+                air_quality = field_values.get('field4')  # Assuming field4 is the IAQ Index
+
+                # Format the data as expected by the WindowController
+                sensor_data = [float(temperature), float(humidity), float(air_quality)]
+
+                # Make a prediction with the WindowController
+                action = self.window_controller.make_prediction(sensor_data)
+            else:
+                print("Failed to retrieve data")
+                action = None
+        return action
 
     def set_state(self, state):
         """Send a command to ThingSpeak to set the state."""

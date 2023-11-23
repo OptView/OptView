@@ -83,7 +83,7 @@ class WeatherChecker:
 
         if weather_condition in condition_messages:
             print(condition_messages[weather_condition])
-            return 0
+            return 1
         else:
             print(f"The weather in {city} is currently {weather_condition}.")
-            return 1
+            return 0
