@@ -18,13 +18,13 @@ class DataGenerator:
         Returns:
             list: A list of data samples, each containing a temperature, humidity, IAQ Index, and window state.
         """
-        print("Creating sample data in process...")
+        print("\nCreating sample data in process...")
         self._create_comfortable_day_data(data_count)
         self._create_hot_day_data(data_count)
         self._create_polluted_day_data(data_count)
         self._create_high_humidity_day_data(data_count)
         self._create_cold_day_data(data_count)
-        print("Finished creating sample data.")
+        print("Finished creating sample data",end="\n\n")
         return self.data_samples
 
     def save_data(self, filename="data_samples.csv"):
@@ -87,7 +87,7 @@ class DataGenerator:
 
 
 # Example usage:
-generator = DataGenerator()
-sample_data = generator.create_sample_data(
-    100)  # Generate 100 samples for each category
-generator.save_data()  # Saves the data to 'data_samples.csv'
+# generator = DataGenerator()
+# sample_data = generator.create_sample_data(
+#     100)  # Generate 100 samples for each category
+# generator.save_data()  # Saves the data to 'data_samples.csv'
