@@ -1,22 +1,41 @@
+"""This module creates sample data for the model to train on.
+
+The module contains a DataGenerator class
+ which can be used to create sample data for the model to train on.
+ The data samples are saved in a CSV file for later use.
+
+Example usage:
+    generator = DataGenerator()
+
+    # Generate 100 samples for each category
+    sample_data = generator.create_sample_data(100)
+    generator.save_data()  # Saves the data to 'data_samples.csv'
+"""
+
 import random
 import csv
 
 
 class DataGenerator:
+    """generates sample data for the model to train on."""
+
     print("DataGenerator Called")
 
     def __init__(self):
-        """Initializes the DataGenerator with an empty list for data samples."""
+        """Initializes the DataGenerator with an empty list for data samples"""
         self.data_samples = []
 
     def create_sample_data(self, data_count):
         """Creates sample data for the model to train on.
 
         Args:
-            data_count (int): The number of data samples to generate for each category.
+            data_count (int): The number of data samples to generate
+             for each category.
 
         Returns:
-            list: A list of data samples, each containing a temperature, humidity, IAQ Index, and window state.
+            list: A list of data samples,
+             each containing a temperature, humidity,
+             IAQ Index, and window state.
         """
         print("\nCreating sample data in process...")
         self._create_comfortable_day_data(data_count)
@@ -24,7 +43,7 @@ class DataGenerator:
         self._create_polluted_day_data(data_count)
         self._create_high_humidity_day_data(data_count)
         self._create_cold_day_data(data_count)
-        print("Finished creating sample data",end="\n\n")
+        print("Finished creating sample data", end="\n\n")
         return self.data_samples
 
     def save_data(self, filename="data_samples.csv"):
@@ -35,7 +54,8 @@ class DataGenerator:
         """
         with open(filename, "w", newline="") as csvfile:
             csvwriter = csv.writer(csvfile)
-            csvwriter.writerow(["Temperature", "Humidity", "IAQ Index", "Window"])
+            csvwriter.writerow(["Temperature", "Humidity",
+                                "IAQ Index", "Window"])
             csvwriter.writerows(self.data_samples)
         print(f"Data samples written to {filename}")
 
@@ -84,10 +104,3 @@ class DataGenerator:
                 random.randint(0, 100),  # IAQ Index
                 0  # Window Closed
             ])
-
-
-# Example usage:
-# generator = DataGenerator()
-# sample_data = generator.create_sample_data(
-#     100)  # Generate 100 samples for each category
-# generator.save_data()  # Saves the data to 'data_samples.csv'
