@@ -1,3 +1,21 @@
+"""
+file: test_data_generator.py
+date: 23/11/2023
+authors: Ziyad Aljaser, Fahad Altamimi
+python: 3.9.12
+description: This file contains unit tests for the DataGenerator class.
+
+The tests include:
+    - Testing that the generator generates the correct number of samples
+    - Testing that the generator generates samples of the correct format
+    - Testing that the generator generates samples with correct values
+
+The tests are run using the unittest module in Python.
+To run the tests, run the following command in the terminal:
+python -m unittest tests.data.test_data_generator
+"""
+
+
 import unittest
 from src.data.data_generator import DataGenerator
 

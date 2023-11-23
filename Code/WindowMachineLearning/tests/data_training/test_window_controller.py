@@ -1,3 +1,23 @@
+"""
+file: test_data_generator.py
+date: 23/11/2023
+authors: Ziyad Aljaser, Fahad Altamimi
+python: 3.9.12
+description: This file contains unit tests for the WindowController class.
+
+The tests include:
+    - Testing that the window opens on a comfortable day
+    - Testing that the window closes on a hot day
+    - Testing that the window closes on a polluted day
+    - Testing that the window closes on a high humidity day
+    - Testing that the window closes on a cold day
+
+The tests are run using the unittest module in Python.
+To run the tests, run the following command in the terminal:
+python -m unittest tests.data_training.test_window_controller
+"""
+
+
 import unittest
 from src.data_training.window_controller import WindowController
 
