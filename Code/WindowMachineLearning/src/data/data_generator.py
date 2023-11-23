@@ -1,4 +1,5 @@
-"""This module creates sample data for the model to train on.
+"""
+This module creates sample data for the model to train on.
 
 The module contains a DataGenerator class
  which can be used to create sample data for the model to train on.

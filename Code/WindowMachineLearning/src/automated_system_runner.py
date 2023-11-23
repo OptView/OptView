@@ -1,4 +1,5 @@
-"""This module runs the window automation system.
+"""
+This module runs the window automation system.
 
 The module contains an AutomatedSystemRunner class
  which can be used to run the window automation system.

@@ -1,4 +1,5 @@
-"""This module sends commands to ThingSpeak to set the state of the window.
+"""
+This module sends commands to ThingSpeak to set the state of the window.
 
 The module contains a ThingSpeakStateSender class
  which can be used to send commands to ThingSpeak to set the state of the window.

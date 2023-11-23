@@ -1,7 +1,5 @@
-# TODO = This file is not used in the project. It should be integrated with the
-#  rest of the project.
-
-"""This module checks the current weather conditions for a city.
+"""
+This module checks the current weather conditions for a city.
 
 The module contains a WeatherChecker class
  which can be used to check the current weather conditions for a city.

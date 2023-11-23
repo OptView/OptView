@@ -1,4 +1,5 @@
-"""This module is the main entry point for the automated control system.
+"""
+This module is the main entry point for the automated control system.
 
 The module contains a main function which is the main entry point for the automated control system.
 

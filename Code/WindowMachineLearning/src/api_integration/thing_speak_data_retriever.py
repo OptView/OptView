@@ -1,4 +1,5 @@
-"""This module retrieves data from the ThingSpeak channel.
+"""
+This module retrieves data from the ThingSpeak channel.
 
 The module contains a ThingSpeakDataRetriever class
  which can be used to retrieve data from the ThingSpeak channel.
