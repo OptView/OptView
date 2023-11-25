@@ -17,7 +17,6 @@ To run the tests, run the following command in the terminal:
 python -m unittest tests.data_training.test_window_controller
 """
 
-
 import unittest
 from src.data_training.window_controller import WindowController
 

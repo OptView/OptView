@@ -15,7 +15,6 @@ To run the tests, run the following command in the terminal:
 python -m unittest tests.data.test_data_generator
 """
 
-
 import unittest
 from src.data.data_generator import DataGenerator
 
