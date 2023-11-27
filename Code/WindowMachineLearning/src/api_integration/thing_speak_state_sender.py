@@ -45,7 +45,7 @@ class ThingSpeakStateSender:
     def get_action(self):
         # Check the weather conditions
         weather_checker = WeatherChecker(os.getenv("WEATHER_API_KEY"))
-        city = "Edinburgh"
+        city = "West+Melbourne"
         weather_conditions = weather_checker.check_weather_conditions(city)
 
         if weather_conditions:
