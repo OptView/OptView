@@ -24,6 +24,10 @@ The Smart Window Control System is an innovative project designed to automate wi
   * ![image](https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=requests&logoColor=white)
   * ![image](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
   * ![image](https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
+* ![image](https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white)
+  * ![image](https://img.shields.io/badge/C/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+* ![image](https://img.shields.io/badge/ThingSpeak-00BFFF?style=for-the-badge&logo=ThingSpeak&logoColor=white)
+* ![image](https://img.shields.io/badge/OpenWeatherMap-0769AD?style=for-the-badge&logo=openweathermap&logoColor=white)
 
 ## User/Developer Manual
 
