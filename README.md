@@ -18,7 +18,7 @@
 The Smart Window Control System is an innovative project designed to automate window operations using real-time environmental data. Leveraging the power of IoT, this system employs data from various sources, including weather APIs and ThingSpeak, to control window states intelligently. By analyzing indoor conditions such as temperature and humidity, alongside external weather data, the system optimizes indoor comfort and energy efficiency. The integration of a machine learning model further enhances its decision-making capabilities, allowing for a responsive and adaptive smart environment.
 
 ## Poster
-
+[Poster](https://drive.google.com/file/d/1nXPtYKqjeXzH0Cw1-ov_xUjQNDW1lwtK/view)
 ## Built With
 * ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
   * ![image](https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=requests&logoColor=white)
