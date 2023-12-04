@@ -30,8 +30,7 @@ The Smart Window Control System is an innovative project designed to automate wi
 * ![image](https://img.shields.io/badge/OpenWeatherMap-0769AD?style=for-the-badge&logo=openweathermap&logoColor=white)
 
 ## User/Developer Manual
-[User/Developer Manual](https://drive.google.com/file/d/1uTfQkWTWF0ffYYJPPIyQQJJMXtnIIFX2/view?usp=sharing)
-
+[User/Developer Manual](https://docs.google.com/document/d/10WHWWFIPNt4u70IYmif6HwKpvaGUal06l_rM6yjrGuo/edit)
 # Visuals
 (Images showcasing the system in action or diagrams of the system architecture)
 
