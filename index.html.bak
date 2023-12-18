@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title> OptiView Window </title>
+  <title> OptView Window </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,14 +41,11 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:faltamimi2020@my.fit.edu">faltamimi2020@my.fit.edu</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +966 500 600 477
+        <i class="bi bi-envelope-fill"></i><a href="mailto:OptViewProject@gmail.com"> OptViewProject@gmail.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +1 202-892-0488
       </div>
       <div class="social-links d-none d-md-block">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+          <a href="https://github.com/OptView/OptView" class="github"><i class="bi bi-github"></i></a>
       </div>
     </div>
   </section>
@@ -57,7 +54,7 @@
   <header id="header" class="d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Day</a></h1>
+      <h1 class="logo"><a href="index.html">OptView</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
@@ -65,27 +62,15 @@
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
           <li><a class="nav-link scrollto" href="#about">About The Project</a></li>
-          <li><a class="nav-link scrollto" href="#services">Fact</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#pricing">Doucmention</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Milestones</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+          <li><a class="nav-link scrollto" href="#fact">Fact</a></li>
+            <li class="dropdown"><a href="#milestones"><span>Milestones</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#">MileStone 1</a></li>
-                  <li><a href="#">MileStone 2</a></li>
-                  <li><a href="#">MileStone 3</a></li>
-                  <li><a href="#">MileStone 4</a></li>
-                  <li><a href="#">MileStone 5</a></li>
+                    <li><a href="#milestones1">First Semester</a></li>
+                    <li><a href="#milestones2">Second Semester</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li>
+            </li>
+<!--          <li><a class="nav-link scrollto " href="#portfolio">Portfolio</a></li>-->
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -111,23 +96,25 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="assets/img/about.jpg" class="img-fluid" alt="">
+            <img src="assets/img/WindowPic.jpeg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+            <h3>What is the Smart Window?</h3>
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+                A proposed project for windows that can automatically adjust their tint based on the weather conditions.
+                Also, it is suitable for use in various settings, including office buildings, hotel rooms, and home bedrooms.
+                The windows are installed with sensors that can detect changes in temperature, humidity, wind, and UV levels.
+                The sensors will then send signals to a microcontroller system that can open or close the windows according to predetermined conditions.
             </p>
             <ul>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-              <li><i class="bi bi-check-circle"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-              <li><i class="bi bi-check-circle"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+              <li><i class="bi bi-check-circle"></i> Energy-Efficient </li>
+              <li><i class="bi bi-check-circle"></i> Automated </li>
+              <li><i class="bi bi-check-circle"></i> Sustainable </li>
             </ul>
             <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum
+                The proposed project for windows that can automatically adjust their tint based on weather conditions is a promising solution
+                that can offer several benefits to people and the environment,
+                including energy efficiency, enhanced comfort and well-being, and reduced carbon emissions.
             </p>
           </div>
         </div>
@@ -135,40 +122,43 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <!-- ======= Facts Section ======= -->
+    <section id="fact" class="fact">
       <div class="container">
 
-        <div class="row">
+          <div class="row">
 
-          <div class="col-lg-4" data-aos="fade-up">
-            <div class="box">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
+              <div class="col-lg-4" data-aos="fade-up">
+                  <div class="box">
+                      <span>Fact 1</span>
+                      <p> The project involves equipping windows with sensors that
+                          can detect changes in weather conditions,
+                          such as temperature, humidity, wind, and UV levels. </p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
+                  <div class="box">
+                      <span>Fact 2</span>
+                      <p> Based on the data collected by the sensors,
+                          a microcontroller system will automatically adjust the tint of the windows,
+                          allowing for better regulation of temperature, sunlight, and glare. </p>
+                  </div>
+              </div>
+
+              <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                  <div class="box">
+                      <span>Fact 3</span>
+                      <p> The project has significant environmental benefits.
+                          It can promote sustainable practices and energy-efficient technologies,
+                          reduce carbon emissions,
+                          and contribute to creating a more livable world. </p>
+                  </div>
+              </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="150">
-            <div class="box">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <div class="box">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
-        </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section><!-- End Fact Section -->
 
     <!-- ======= Clients Section ======= -->
     <section id="clients" class="clients">
@@ -176,28 +166,28 @@
 
         <div class="row d-flex align-items-center">
 
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-1.png" class="img-fluid" alt="">
-          </div>
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
+            </div>
+
+            <div class="col-lg-2 col-md-4 col-6">
+                <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
+            </div>
 
           <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6">
-            <img src="assets/img/clients/client-6.png" class="img-fluid" alt="">
+            <img src="assets/img/clients/FIT_Logo.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -205,69 +195,134 @@
       </div>
     </section><!-- End Clients Section -->
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services">
+    <!-- ======= Milestones Section ======= -->
+    <section class="milestones">
       <div class="container">
 
         <div class="section-title">
-          <span>Services</span>
-          <h2>Services</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <span>Milestones</span>
+          <h2>Milestones</h2>
+          <p>Here Are All The Milestones For The Project</p>
         </div>
 
+      <div id="milestones1" class="section-title">
+          <hr>
+          <hr>
+          <h3>First Semester</h3>
+      </div>
+
         <div class="row">
+
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
             <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href="">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Milestone 1</h4>
+                <h5>(March 4)</h5>
+                <a class="m-btn" href="https://drive.google.com/file/d/14jjVWQbRhTsRJSHxLg5Zv_u4b91PK6tB/view?usp=sharing">Requirement Document</a>
+                <a class="m-btn" href="https://drive.google.com/file/d/1MKiOUnc1rhK0ARzCAxf7yW7zZ0GOEVPY/view?usp=sharing">Design Document</a>
+                <a class="m-btn" href="https://drive.google.com/file/d/1Hzy6P8b5wg23PwMIL__zJZvzn1SXZeR-/view?usp=sharing">Test Document</a>
+                <a class="m-btn" href="https://drive.google.com/file/d/1bKxIwReLNPd0uPFeHVsS9uSC8u7rIJSU/view?usp=sharing">Progress Evaluation</a>
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="150">
             <div class="icon-box">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4><a href="">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4>Milestone 2</h4>
+              <h5>(April 11)</h5>
+                <a class="m-btn" href="https://drive.google.com/file/d/1qpjOzWSYLJo4QpS63ZdAzOHwbxTZUjZ1/view?usp=sharing">Progress Evaluation</a>
+
             </div>
           </div>
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4><a href="">Magni Dolores</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4>Milestone 3</h4>
+              <h5>(May 3)</h5>
+              <a class="m-btn" href="https://drive.google.com/file/d/1ZR0yv7biPzftWa4Xq3IPOmNv8VUsC-1B/view?usp=sharing">Progress Evaluation</a>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4><a href="">Nemo Enim</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="600">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-slideshow"></i></div>
-              <h4><a href="">Dele cardo</a></h4>
-              <p>Quis consequatur saepe eligendi voluptatem consequatur dolor consequuntur</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="750">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bx-arch"></i></div>
-              <h4><a href="">Divera don</a></h4>
-              <p>Modi nostrum vel laborum. Porro fugit error sit minus sapiente sit aspernatur</p>
-            </div>
-          </div>
+<!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">-->
+<!--            <div class="icon-box">-->
+<!--              <div class="icon"><i class="bx bx-world"></i></div>-->
+<!--              <h4><a href="">Milestone 4</a></h4>-->
+<!--              <p>Details ...........................................................................................</p>-->
+<!--            </div>-->
+<!--          </div>-->
 
         </div>
 
-      </div>
-    </section><!-- End Services Section -->
+          <div id="milestones2" class="section-title">
+              <hr>
+              <hr>
+              <h3>Second Semester</h3>
+          </div>
+
+          <!--Second Semester Plan-->
+          <div class="row d-flex justify-content-center plan">
+              <div class="col-lg-4 col-md-6 d-flex" data-aos="fade-up">
+                  <div class="icon-box">
+                      <div class="icon"><i class="bx bx-bulb"></i></div>
+                      <h4>Plan</h4>
+                      <h5>(Sep 6)</h5>
+                      <a class="m-btn" href="https://drive.google.com/file/d/1JOpLrD8axZrDUBktiSIP1V2cze9nqk-p/view?usp=sharing">Plan</a><br>
+                      <a class="m-btn" href="https://docs.google.com/presentation/d/10Ja19SWjG_TC_eXDMGLQXSUKoiXZoPOi/edit?usp=sharing&ouid=110822517046313717978&rtpof=true&sd=true">Presentation</a>
+                  </div>
+              </div>
+          </div>
+
+              <!--Milestone 4-6-->
+              <div class="row">
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="fade-up">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4>Milestone 4</h4>
+                        <h5>(Oct 2)</h5>
+                        <a class="m-btn" href="https://drive.google.com/file/d/1l9u_ciQVuB6IQC9mCtoEOUchNMXwPK9M/view?usp=sharing">Progress Evaluation</a><br>
+                        <a class="m-btn" href="https://docs.google.com/presentation/d/19kr1BImP2gax3ZfA8FsbMhupyKbHT0qX/edit?usp=sharing&ouid=110283192329516046144&rtpof=true&sd=true">Presentation</a><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up"data-aos-delay="150">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4>Milestone 5</h4>
+                        <h5>(Oct 30)</h5>
+                        <a class="m-btn" href="https://drive.google.com/file/d/1FVt8IA757zE1kKeBSrJK5wbqvD5jUNIj/view?usp=sharing">Progress Evaluation</a><br>
+                        <a class="m-btn" href="https://docs.google.com/presentation/d/1Zw0yHm3tKPwY6YDbVAjPo3U6OPqpxjmg/edit?usp=sharing&ouid=110822517046313717978&rtpof=true&sd=true">Presentation</a><br>
+                        <a class="m-btn" href="https://drive.google.com/file/d/11StLOFW4g8BbEq-7Tqmb5TOtHrXpd8Qs/view?usp=sharing">e-book page</a><br>
+                        <a class="m-btn" href="https://drive.google.com/file/d/1nXPtYKqjeXzH0Cw1-ov_xUjQNDW1lwtK/view?usp=sharing">Poster</a><br>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box">
+                        <div class="icon"><i class="bx bx-file"></i></div>
+                        <h4>Milestone 6</h4>
+                        <h5>(Nov 27)</h5>
+                        <a class="m-btn" href="https://docs.google.com/document/d/1T_Qdq91n_79ZW_dhfpz5A2SpV6sREX-JOPDrYsDluqA/edit">Progress Evaluation</a><br>
+                        <a class="m-btn" href="https://docs.google.com/presentation/d/18jdKJd_O8vvMLERbsbcvKclPcNKzniotV7iEs51WYlU/edit#slide=id.p3">Presentation</a><br>
+                        <a class="m-btn" href="https://drive.google.com/file/d/1abUGZU1y13kUHb9dAU7P3Dw7KGyjR2j1/view">Demo Video</a><br>
+                        <a class="m-btn" href="https://docs.google.com/document/d/10WHWWFIPNt4u70IYmif6HwKpvaGUal06l_rM6yjrGuo/edit?usp=sharing">User and/or Developer Manual</a><br>
+                    </div>
+                </div>
+
+                <!--          <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="fade-up" data-aos-delay="450">-->
+                <!--            <div class="icon-box">-->
+                <!--              <div class="icon"><i class="bx bx-world"></i></div>-->
+                <!--              <h4><a href="">Milestone 4</a></h4>-->
+                <!--              <p>Details ..........................................................................................</p>-->
+                <!--            </div>-->
+                <!--          </div>-->
+
+            </div>
+        </div>
+
+    </div>
+
+    </section><!-- End Milestones Section -->
 
     <!-- ======= Cta Section ======= -->
     <section id="cta" class="cta">
@@ -275,198 +330,156 @@
 
         <div class="text-center">
           <h3>Call To Action</h3>
-          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Contact Us For Any Additional Information</p>
           <a class="cta-btn" href="#">Call To Action</a>
         </div>
 
       </div>
     </section><!-- End Cta Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
+<!--    &lt;!&ndash; ======= Portfolio Section ======= &ndash;&gt;-->
+<!--    <section id="portfolio" class="portfolio">-->
+<!--      <div class="container">-->
+
+<!--        <div class="section-title">-->
+<!--          <span>Portfolio</span>-->
+<!--          <h2>Portfolio</h2>-->
+<!--          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>-->
+<!--        </div>-->
+
+<!--        <div class="row" data-aos="fade-up">-->
+<!--          <div class="col-lg-12 d-flex justify-content-center">-->
+<!--            <ul id="portfolio-flters">-->
+<!--              <li data-filter="*" class="filter-active">All</li>-->
+<!--              <li data-filter=".filter-app">App</li>-->
+<!--              <li data-filter=".filter-card">Card</li>-->
+<!--              <li data-filter=".filter-web">Web</li>-->
+<!--            </ul>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>App 1</h4>-->
+<!--              <p>App</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Web 3</h4>-->
+<!--              <p>Web</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>App 2</h4>-->
+<!--              <p>App</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Card 2</h4>-->
+<!--              <p>Card</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Web 2</h4>-->
+<!--              <p>Web</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-app">-->
+<!--            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>App 3</h4>-->
+<!--              <p>App</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Card 1</h4>-->
+<!--              <p>Card</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-card">-->
+<!--            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Card 3</h4>-->
+<!--              <p>Card</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 portfolio-item filter-web">-->
+<!--            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">-->
+<!--            <div class="portfolio-info">-->
+<!--              <h4>Web 3</h4>-->
+<!--              <p>Web</p>-->
+<!--              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>-->
+<!--              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+<!--    </section>&lt;!&ndash; End Portfolio Section &ndash;&gt;-->
+
+    <!-- ======= Sponsor Section ======= -->
+    <section id="sponsor" class="team">
       <div class="container">
-
-        <div class="section-title">
-          <span>Portfolio</span>
-          <h2>Portfolio</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row" data-aos="fade-up">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="150">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+          <div class="section-title">
+              <span>Sponsor</span>
+              <h2>Sponsor</h2>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
+          <div class="row d-flex justify-content-center">
+              <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+                  <div class="member">
+                      <img src="assets/img/sponsor/sponsor-1.jpg" alt="" class="img-thumbnail">
+                      <h4>Dr.Marius Silaghi</h4>
+                      <span>Sponsor</span>
+                      <p>
+                          Interested in intelligent decision-making and corresponding P2P technology to support direct democracy (directdemocracyp2p.net), cryptology, robotics, probabilistic models, networking, automatic speech-recognition, virtual reality, distributed constraint reasoning, numerical constraints, operating system drivers.
+                      </p>
+                      <div class="social">
+                          <a href="https://www.fit.edu/faculty-profiles/s/silaghi-marius/"><i class="bi bi-window"></i></a>
+                      </div>
+                  </div>
+              </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="assets/img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="assets/img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
       </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing">
-      <div class="container">
-
-        <div class="section-title">
-          <span>Pricing</span>
-          <h2>Pricing</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0" data-aos="zoom-in">
-            <div class="box featured">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-            <div class="box">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
+    </section><!-- End Sponsor Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team">
@@ -475,161 +488,85 @@
         <div class="section-title">
           <span>Team</span>
           <h2>Team</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Here Are The Team Members For The Project</p>
         </div>
 
-        <div class="row">
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+        <div class="row d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                 <div class="member">
-                    <img src="assets/img/team/team-1.jpeg" alt="">
+                    <img src="assets/img/team/team-1.jpg" alt="" class="img-thumbnail">
                     <h4>Fahad Altamimi</h4>
-                    <span>Chief Executive Officer</span>
+                    <span>Software Engineer</span>
                     <p>
-                        Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
+                        FAltamimi2020@my.fit.edu
                     </p>
                     <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/AltamimiFahad"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                 <div class="member">
-                    <img src="assets/img/team/team-2.jpeg" alt="">
-                    <h4>Ziyad Aljassr</h4>
-                    <span>Product Tester</span>
+                    <img src="assets/img/team/team-2.jpg" alt="" class="img-thumbnail">
+                    <h4> Ziyad Aljaser </h4>
+                    <span>Software Engineer</span>
                     <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                        ZAljaser2020@my.fit.edu
                     </p>
                     <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/Ziyad-Aljaser"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                 <div class="member">
-                    <img src="assets/img/team/team-2.jpeg" alt="">
+                    <img src="assets/img/team/team-3.jpg" alt="" class="img-thumbnail">
                     <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
+                    <span>Software Engineer</span>
                     <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                        AAlsaleem2021@my.fit.edu
                     </p>
                     <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href="https://github.com/ahmad2969"><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                 <div class="member">
-                    <img src="assets/img/team/team-2.jpeg" alt="">
-                    <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
+                    <img src="assets/img/team/team-4.jpg" alt="" class="img-thumbnail">
+                    <h4> Yousef Alanazi </h4>
+                    <span> Computer Science </span>
                     <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                        YAlanazi2020@my.fit.edu
                     </p>
                     <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
+            <div class="col-lg-4 col-md-6" data-aos="zoom-in">
                 <div class="member">
-                    <img src="assets/img/team/team-2.jpeg" alt="">
-                    <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
+                    <img src="assets/img/team/team-5.jpeg" alt="" class="img-thumbnail">
+                    <h4> Ammar Alsehli </h4>
+                    <span> Software Engineer </span>
                     <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
+                        AAlsehli2020@my.fit.edu
                     </p>
                     <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
+                        <a href=""><i class="bi bi-github"></i></a>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-                <div class="member">
-                    <img src="assets/img/team/team-3.jpeg" alt="">
-                    <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
-                    <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                    </p>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-                <div class="member">
-                    <img src="assets/img/team/team-4.jpg" alt="">
-                    <h4>William Anderson</h4>
-                    <span>CTO</span>
-                    <p>
-                        Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
-                    </p>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-                <div class="member">
-                    <img src="assets/img/team/team-5.jpg" alt="">
-                    <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
-                    <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                    </p>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in">
-                <div class="member">
-                    <img src="assets/img/team/team-6.jpg" alt="">
-                    <h4>Ahmed Al Saleem</h4>
-                    <span>Product Manager</span>
-                    <p>
-                        Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
-                    </p>
-                    <div class="social">
-                        <a href=""><i class="bi bi-twitter"></i></a>
-                        <a href=""><i class="bi bi-facebook"></i></a>
-                        <a href=""><i class="bi bi-instagram"></i></a>
-                        <a href=""><i class="bi bi-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
         </div>
 
       </div>
@@ -642,7 +579,7 @@
         <div class="section-title">
           <span>Contact</span>
           <h2>Contact</h2>
-          <p>Sit sint consectetur velit quisquam cupiditate impedit suscipit alias</p>
+          <p>Contact Us For Any Additional Information</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -650,7 +587,7 @@
             <div class="info-box mb-4">
               <i class="bx bx-map"></i>
               <h3>Our Address</h3>
-              <p>A108 Adam Street, New York, NY 535022</p>
+              <p>3217 Psychology Pl, Melbourne, FL 32901</p>
             </div>
           </div>
 
@@ -658,7 +595,7 @@
             <div class="info-box  mb-4">
               <i class="bx bx-envelope"></i>
               <h3>Email Us</h3>
-              <p>faltamimi2020@my.fit.edu</p>
+              <p>OptViewProject@gmail.com</p>
             </div>
           </div>
 
@@ -666,44 +603,17 @@
             <div class="info-box  mb-4">
               <i class="bx bx-phone-call"></i>
               <h3>Call Us</h3>
-              <p>+966 500 600 477</p>
+              <p>+1 202-892-0488</p>
             </div>
           </div>
 
         </div>
 
-        <div class="row" data-aos="fade-up">
-
-          <div class="col-lg-6 ">
-            <iframe class="mb-4 mb-lg-0" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 384px;" allowfullscreen></iframe>
+          <div class="row" data-aos="fade-up">
+              <div class="col-12">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1312.4747636930013!2d-80.62414929087169!3d28.061329495409147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88de1205775cfe2f%3A0x3d1f48c9e45a56c5!2sL3Harris%20Student%20Design%20Center%20(HSDC)!5e0!3m2!1sen!2sus!4v1676938219811!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 350px;" allowfullscreen></iframe>
+              </div>
           </div>
-
-          <div class="col-lg-6">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
 
       </div>
     </section><!-- End Contact Section -->
@@ -712,73 +622,12 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>Day</h3>
-              <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
-              </p>
-              <div class="social-links mt-3">
-                <a href="#" class="snap"><i class="bx bxl-snap"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Day</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>OptView</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
@@ -793,7 +642,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

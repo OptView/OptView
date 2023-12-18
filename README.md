@@ -19,6 +19,7 @@ The Smart Window Control System is an innovative project designed to automate wi
 
 ## Poster
 [Poster](https://drive.google.com/file/d/1nXPtYKqjeXzH0Cw1-ov_xUjQNDW1lwtK/view)
+
 ## Built With
 * ![image](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
   * ![image](https://img.shields.io/badge/Requests-2CA5E0?style=for-the-badge&logo=requests&logoColor=white)
@@ -31,8 +32,9 @@ The Smart Window Control System is an innovative project designed to automate wi
 
 ## User/Developer Manual
 [User/Developer Manual](https://docs.google.com/document/d/10WHWWFIPNt4u70IYmif6HwKpvaGUal06l_rM6yjrGuo/edit)
+
 # Visuals
-(Images showcasing the system in action or diagrams of the system architecture)
+[Demo](https://drive.google.com/file/d/1abUGZU1y13kUHb9dAU7P3Dw7KGyjR2j1/view)
 
 # Features
 * **Automated Tint Adjustment**: Automatically adjusts the window tint based on real-time weather data.
@@ -44,8 +46,8 @@ The Smart Window Control System is an innovative project designed to automate wi
 # Contributors
 **This project exists thanks to all the people who contribute.**
 
-<a href="https://github.com/Ziyad-Aljaser/haven-for-homeless/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=Ziyad-Aljaser/haven-for-homeless" />
+<a href="https://github.com/OptView/OptView/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=OptView/OptView" />
 </a>
 
 Made with [contrib.rocks](https://contrib.rocks).
